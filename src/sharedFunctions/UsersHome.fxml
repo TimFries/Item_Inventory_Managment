@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="usersHome" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#handleMouseClick_action" onMouseEntered="#handleMouseEnter_action" onMouseExited="#handleMouseExit_action" prefHeight="356.0" prefWidth="277.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: LIGHTGREEN;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sharedFunctions.UsersHomeController">
+   <children>
+      <ImageView fitHeight="140.0" fitWidth="172.0" layoutX="53.0" layoutY="69.0" pickOnBounds="true" AnchorPane.topAnchor="69.0">
+         <image>
+            <Image url="@../Images/Users_icon_updated.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="79.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete/update users" wrappingWidth="118.13671875">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text layoutX="108.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Text>
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>

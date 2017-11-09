@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="warehouseChoice" maxHeight="110.0" maxWidth="550.0" minHeight="110.0" minWidth="550.0" onMouseEntered="#handleMouseEnter_action" onMouseExited="#handleMouseExit_action" prefHeight="110.0" prefWidth="550.0" style="-fx-border-radius: 25; -fx-background-radius: 25; -fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="name" alignment="CENTER" layoutX="230.0" layoutY="29.0" onMouseClicked="#handleTableChoice_action" prefHeight="110.0" prefWidth="550.0" text="Text" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu fx:id="DeletionMenu">
+              <items>
+                <MenuItem fx:id="DeletionItem" mnemonicParsing="false" onAction="#handleWarehouseDeletion_action" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow>
+         <input>
+            <ColorAdjust />
+         </input></InnerShadow>
+   </effect>
+</AnchorPane>

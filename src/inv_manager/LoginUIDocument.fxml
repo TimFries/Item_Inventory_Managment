@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="335.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inv_manager.LoginUIDocumentController">
+    <children>
+      <GridPane alignment="CENTER" prefHeight="335.0" prefWidth="466.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="60.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="16.0" prefHeight="16.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="127.0" minHeight="30.0" prefHeight="118.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="Username_Label" text="Username" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.vgrow="NEVER">
+               <GridPane.margin>
+                  <Insets right="60.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Password_Label" text="Password" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="60.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="Username_text" maxWidth="175.0" minWidth="150.0" prefWidth="150.0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="130.0" />
+               </GridPane.margin>
+            </TextField>
+            <PasswordField fx:id="Password_text" maxWidth="175.0" minWidth="150.0" prefWidth="150.0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="130.0" />
+               </GridPane.margin>
+            </PasswordField>
+              <Button fx:id="Login_Button" onAction="#handleLogin_ButtonAction" prefHeight="25.0" prefWidth="69.0" text="Login" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="Newuser_Button" mnemonicParsing="false" onAction="#handleNewuser_ButtonAction" text="New User" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Text fx:id="LoginError_text" fill="#cd1111" strokeType="OUTSIDE" strokeWidth="0.0" text="Invaild Username or Password" visible="false" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="ServerError_text" fill="#ee0808" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorry, there was a server error " visible="false" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>
